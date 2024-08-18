@@ -10,7 +10,11 @@ const StoreContextProvider = (props) =>{
 
      const [token,setToken] = useState("");
 
-
+    useEffect(()=>{
+        if(localStorage.getItem("token")){
+            setToken(localStorage.getItem("token"));
+        }
+    })
 
 
      const addToCart = (itemId) => {
