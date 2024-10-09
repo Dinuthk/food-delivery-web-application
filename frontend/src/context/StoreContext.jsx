@@ -14,7 +14,7 @@ const StoreContextProvider = (props) =>{
         if(localStorage.getItem("token")){
             setToken(localStorage.getItem("token"));
         }
-    })
+    },[])
 
 
      const addToCart = (itemId) => {
