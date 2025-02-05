@@ -34,9 +34,14 @@
     border-radius: 50%;
     transition: 0.2s;
 }
-.explore-menu-list-item img:hover{
-    width: 8.5vw;
+.explore-menu-list-item img {
+    transition: transform 0.2s ease-in-out; /* Smooth size increase */
 }
+
+.explore-menu-list-item img:hover {
+    transform: scale(1.02); /* Increases size by 20% */
+}
+
 .explore-menu-list-item p{
     margin-top: 10px;
     color: #747474;
